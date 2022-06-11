@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import {Nav, NavLink, NavMenu, Bars, NavLogo, SearchContainer, SearchInput, SelectLanguage, MainServices, ServiceLink} from './StyledNav';
+import {Nav, NavLink, NavMenu, Bars, NavLogo, SearchContainer, SearchInput, SelectLanguage, MainServices, ServiceLink, CartIcon} from './StyledNav';
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
@@ -21,15 +21,18 @@ function Header() {
             <option value="PL" onChange={handleChange}>PL</option>
             <option value="UZ" onChange={handleChange}>UZ</option>
           </SelectLanguage>
+            <NavLogo>
+              <NavLink to='/'>
+                LOGO + BRAND
+              </NavLink>
+            </NavLogo>
           <Bars>
             <MenuIcon/>
           </Bars>
+          <CartIcon>
+            <ShoppingBasketIcon/>
+          </CartIcon>
           <NavMenu>
-            <NavLogo>
-              <NavLink to='/'>
-                LOGO
-              </NavLink>
-            </NavLogo>
             <NavLink to='/about'>
               About
             </NavLink>
@@ -42,7 +45,7 @@ function Header() {
             </NavLink>
             <NavLink to='/cart'>
               <ShoppingBasketIcon/>
-              0 items 
+               0 items 
               <span style={{color: 'grey', fontWeight: '200'}}> $0.00</span>
             </NavLink>
           </NavMenu>

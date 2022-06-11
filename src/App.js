@@ -22,7 +22,13 @@ function App() {
         <Route path='/garden' element={<Garden/>}/>
         <Route path='/rooms' element={<Rooms/>}/>
         <Route path='/bathandbody' element={<BathBody/>}/>
-        <Route path='/lightning-decor' element={<LightningDecor/>}/>
+        <Route path='/lightning-decor' element={<LightningDecor/>}>
+          <Route path='table-lamps'/>
+          <Route path='floor-lamps'/>
+          <Route path='ceiling-lamps'/>
+          <Route path='lampshades'/>
+          <Route path='inteligent-lightning'/>
+        </Route>
         <Route path='/furniture' element={<Furniture/>}/>
         <Route path='/about' element={<About/>}/>
         <Route path='/contact-us' element={<Contact/>}/>

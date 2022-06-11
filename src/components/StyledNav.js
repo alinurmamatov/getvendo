@@ -41,9 +41,21 @@ export const NavLink = styled(Link)`
  &.active {
     color: #f2cc8f;
  }
+`
 
+export const CartIcon = styled.div`
+ color: white;
+ display: none;
+ padding: 0;
+ margin: 0;
  @media screen and (max-width: 520px) {
-   display: none;
+   display: block;
+   position: absolute;
+   top: 0;
+   right: -5px;
+   transform: translate(-100%, 75%);
+   font-size: 1.8rem;
+   cursor: pointer;
  }
 `
 
@@ -57,7 +69,7 @@ export const Bars = styled.div`
     display: block;
     position: absolute;
     top: 0;
-    left: 10%;
+    left: 40px;
     transform: translate(-100%, 75%);
     font-size: 1.8rem;
     cursor: pointer;
@@ -79,6 +91,13 @@ export const NavLogo = styled.div`
   text-align: center;
   font-size: 30px;
   cursor: pointer;
+  white-space: nowrap;
+
+  @media screen and (max-width: 520px) {
+   display: block;
+   margin: auto;
+   font-size: 1.3rem;
+  }
 `
 export const SearchContainer = styled.div`
  background-color: #14213d;
@@ -91,13 +110,15 @@ export const SearchInput = styled.input`
  display: block;
  width: 70vw;
  margin: auto;
- padding: 4px 0;
+ padding: 5px; 
  font-size: 1.2rem;
+ border: none;
+ border-radius: 4px;
 
  @media screen and (max-width: 520px) {
     width: 85vw;
     font-size: 1rem;
-    padding: 1px 0;
+    padding: 2px;
  }
 `
 
@@ -120,6 +141,7 @@ export const ServiceLink = styled(Link)`
  text-decoration: none;
  padding: 0 1rem;
  cursor: pointer;
+ transition: border 2s;
 
  &.active {
     color: #f2cc8f;
