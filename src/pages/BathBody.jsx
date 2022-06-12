@@ -29,7 +29,7 @@ function BathBody() {
           </LeftMenu>
           <RightMenu>
           <div>
-              <img src="https://github.com/alinurmamatov/getvendo/blob/master/src/images/bath-body.jpeg" alt='bath-and-body-new' style={{width: '100%', height: '300px', objectFit: 'cover'}}/>
+              <img src="https://github.com/alinurmamatov/getvendo/blob/master/src/images/bath-body.jpeg?raw=true" alt='bath-and-body-new' style={{width: '100%', height: '300px', objectFit: 'cover'}}/>
             <SubHeading>NEW Collections</SubHeading>
             </div>
           </RightMenu>
