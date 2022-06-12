@@ -31,11 +31,11 @@ function Garden() {
           </LeftMenu>
           <RightMenu>
           <div>
-              <img src={gardenNew} alt='kitchen-new' style={{width: '250px', height: '300px', objectFit: 'cover'}}/>
+              <img src={gardenNew} alt='garden-new' style={{width: '250px', height: '300px', objectFit: 'cover'}}/>
             <SubHeading>NEW Collections</SubHeading>
             </div>
             <div>
-                <img src={gardenSale} alt="kitchen-sale" style={{width: '250px', height: '300px', objectFit: 'cover'}}/>
+                <img src={gardenSale} alt="garden-sale" style={{width: '250px', height: '300px', objectFit: 'cover'}}/>
               <SubHeading>SALE</SubHeading>
             </div>
           </RightMenu>

@@ -30,7 +30,7 @@ function Rooms() {
           </LeftMenu>
           <RightMenu>
           <div>
-              <img src={roomsImg} alt='kitchen-new' style={{width: '100%', height: '300px', objectFit: 'cover'}}/>
+              <img src={roomsImg} alt='rooms-new' style={{width: '100%', height: '300px', objectFit: 'cover'}}/>
             <SubHeading>NEW Collections</SubHeading>
             </div>
           </RightMenu>
