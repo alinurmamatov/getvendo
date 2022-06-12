@@ -140,7 +140,6 @@
     text-decoration: none;
     padding: 0 1rem;
     cursor: pointer;
-    transition: border 2s;
 }
 
 .navbar-toggle {
