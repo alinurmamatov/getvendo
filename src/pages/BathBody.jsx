@@ -1,6 +1,5 @@
 import Header from "../components/Header";
 import { LeftMenu, RightMenu, MainContainer, SubLinks, SubHeading, HeadingTitle } from "./styles/StyledPages";
-import bathBody from '../images/bath-body.jpeg';
 
 function BathBody() {
   return (
@@ -30,7 +29,7 @@ function BathBody() {
           </LeftMenu>
           <RightMenu>
           <div>
-              <img src={bathBody} alt='kitchen-new' style={{width: '100%', height: '300px', objectFit: 'cover'}}/>
+              <img src="https://github.com/alinurmamatov/getvendo/blob/master/src/images/bath-body.jpeg" alt='kitchen-new' style={{width: '100%', height: '300px', objectFit: 'cover'}}/>
             <SubHeading>NEW Collections</SubHeading>
             </div>
           </RightMenu>
