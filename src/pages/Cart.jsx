@@ -4,7 +4,7 @@ function Cart() {
   return (
     <>
         <Header/>
-        <p>hey its cart</p>
+        <p>Hey here is ordered products in cart</p>
     </>
   )
 }

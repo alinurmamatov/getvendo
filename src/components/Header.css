@@ -1,0 +1,238 @@
+:root {
+    --primary-bgcolor: #2b2d42;
+    --active-color: #f2cc8f;
+}
+
+.nav-menu {
+    background-color: var(--primary-bgcolor);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    transition: 500ms;
+}
+
+.nav-menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu-items li {
+    text-decoration: none;
+}
+
+.mobile-nav-menu {
+    background-color: var(--primary-bgcolor);
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    position: fixed;
+    top: -100%;
+    transition: 500ms;
+}
+
+.nav-main-menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    white-space: nowrap;
+}
+
+.nav-main-menu a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+
+.home-logo a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+.select-language {
+    color: white;
+    background-color: var(--primary-bgcolor);
+    border: none;
+    cursor: pointer;
+}
+
+.home-logo {
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.icons-container {
+    display: none;
+}
+
+.menu-icon {
+    color: white;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.close-icon {
+    color: white;
+    display: none;
+}
+
+.cart-icon {
+    color: white;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.search-container {
+    background-color: var(--primary-bgcolor);
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    display: block;
+    width: 70vw;
+    margin: auto;
+    padding: 5px; 
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.nav-main-services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--primary-bgcolor);
+    padding: 12px 0;
+}
+
+.nav-main-services-click {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+    background-color: var(--primary-bgcolor);
+    position: fixed;
+    top: -100%;
+    transition: top 500ms;
+}
+
+.nav-main-services a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    transition: border 2s;
+}
+
+.navbar-toggle {
+    display: none;
+}
+
+a:active {
+    color: var(--active-color);
+    border-bottom: 1px solid var(--active-color);
+}
+
+
+/* RWD 760px */
+
+@media screen and (max-width: 760px) {
+    .nav-menu {
+        height: 10vh;
+    }
+
+
+    .select-language {
+        display: none;
+    }
+
+    .home-logo {
+        display: block;
+        margin: auto;
+        font-size: 1.3rem;
+    }
+
+    .menu-icon {
+        background-color: var(--primary-bgcolor);
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        cursor: pointer;
+    }
+
+    .nav-main-services {
+        display: none;
+    }
+
+    .nav-main-services-click {
+        background-color: var(--primary-bgcolor);
+        position: relative;
+        top: 0;
+        transition: 500ms ease-out;
+    }
+
+    .nav-main-services-click a {
+        text-decoration: none;
+        color: white;
+        padding: 5px 30px;
+        transition: 500ms;
+    }
+
+    .icons-container {
+        display: block;
+    }
+
+    .cart-icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        font-size: 1.8rem;
+        cursor: pointer;
+    }
+
+    .nav-main-menu {
+        display: none;
+    }
+
+    .search-input {
+        width: 85vw;
+        font-size: 1rem;
+        padding: 3px;
+    }
+
+    .close-icon {
+        background-color: var(--primary-bgcolor);
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 20px;
+        cursor: pointer;
+        color: white;
+        z-index: 10;
+    }
+    
+    .nav-menu-items {
+        width: 100%;
+    }
+}

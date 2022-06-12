@@ -4,7 +4,7 @@ function About() {
   return (
     <>
         <Header/>
-        <p>hey, its about us</p>
+        <p>Hey, its about company</p>
     </>
   )
 }

@@ -41,7 +41,7 @@ function LightningDecor() {
             <SubHeading>NEW Collections</SubHeading>
             </div>
             <div>
-                <img src={ldSale} alt="lightning-decor-sale" style={{width: '250px', height: '300px', objectFit: 'cover'}}/>
+                <img src={ldSale} alt="lightning-decor-sale" style={{width: '100%', height: '300px', objectFit: 'cover'}}/>
               <SubHeading>SALE</SubHeading>
             </div>
           </RightMenu>
