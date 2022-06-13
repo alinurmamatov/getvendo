@@ -62,10 +62,22 @@
     cursor: pointer;
 }
 
+.home-logo {
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    white-space: nowrap;
+}
 
-.home-logo a {
+.home-logo-icon {
     text-decoration: none;
     color: white;
+    list-style: none;
+}
+
+.home-logo-icon-active {
+    text-decoration: none;
+    color: var(--active-color);
     list-style: none;
 }
 
@@ -76,12 +88,6 @@
     cursor: pointer;
 }
 
-.home-logo {
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    white-space: nowrap;
-}
 
 .icons-container {
     display: none;

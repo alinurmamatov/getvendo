@@ -32,7 +32,7 @@ function Header() {
         </select>
         <ul className='nav-menu-items'>
           <li className="home-logo">
-            <Link to='/'>LOGO + BRAND</Link>
+            <NavLink to='/' className={({isActive}) => isActive ? "home-logo-icon-active" : "home-logo-icon"} end>LOGO + BRAND</NavLink>
           </li>
           <li className="cart-icon">
             <ShoppingBasketIcon />
