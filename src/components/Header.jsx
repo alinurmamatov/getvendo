@@ -3,7 +3,7 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 import MenuIcon from '@mui/icons-material/Menu';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import CloseIcon from '@mui/icons-material/Close';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import './Header.css';
 
 
@@ -38,17 +38,17 @@ function Header() {
             <ShoppingBasketIcon />
           </li>
           <li className="nav-main-menu">
-            <Link to='/about' >About</Link>
-            <Link to='/contact-us'>Contact Us</Link>
-            <Link to='/my-profile'>
+            <NavLink to='/about' className={({isActive}) => isActive ? "nav-main-link-active" : "nav-main-link"}>About</NavLink>
+            <NavLink to='/contact-us' className={({isActive}) => isActive ? "nav-main-link-active" : "nav-main-link"}>Contact Us</NavLink>
+            <NavLink to='/my-profile' className={({isActive}) => isActive ? "nav-main-link-active" : "nav-main-link"}>
               <AccountCircleIcon/>
               My Profile
-            </Link>
-            <Link to='/cart'>
+            </NavLink>
+            <NavLink to='/cart' className={({isActive}) => isActive ? "nav-main-link-active" : "nav-main-link"}>
               <ShoppingBasketIcon/>
                 0 items 
                 <span style={{color: 'grey', fontWeight: '200'}}> $0.00</span>
-            </Link>
+            </NavLink>
           </li>
         </ul>
       </nav>
@@ -56,12 +56,12 @@ function Header() {
           <input type="text" className="search-input" placeholder='Search'/>
         </div>
         <div className={sidebar ? "nav-main-services-click" : "nav-main-services"}>
-          <Link to='/rooms'>ROOMS</Link>
-          <Link to='/furniture'>FURNITURE</Link>
-          <Link to='/lightning-decor'>LIGHTNING&amp;DECOR</Link>
-          <Link to='/kitchen'>KITCHEN</Link>
-          <Link to='/bathandbody'>BATH&amp;BODY</Link>
-          <Link to='/garden'>GARDEN</Link>
+          <NavLink to='/rooms' className={({isActive}) => isActive ? "nav-services-active" : "nav-services"}>ROOMS</NavLink>
+          <NavLink to='/furniture' className={({isActive}) => isActive ? "nav-services-active" : "nav-services"}>FURNITURE</NavLink>
+          <NavLink to='/lightning-decor' className={({isActive}) => isActive ? "nav-services-active" : "nav-services"}>LIGHTNING&amp;DECOR</NavLink>
+          <NavLink to='/kitchen' className={({isActive}) => isActive ? "nav-services-active" : "nav-services"}>KITCHEN</NavLink>
+          <NavLink to='/bathandbody' className={({isActive}) => isActive ? "nav-services-active" : "nav-services"}>BATH&amp;BODY</NavLink>
+          <NavLink to='/garden' className={({isActive}) => isActive ? "nav-services-active" : "nav-services"}>GARDEN</NavLink>
         </div>
     </>
   )
